@@ -3,6 +3,7 @@ body {
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.1;
+  margin: 0px;
 }
 
 /* hero section*/
@@ -248,20 +249,27 @@ footer {
 }
 
 
-nav {
-      
-  background-color: black;
-  height: 30px;
-  width: 100px;
-  display: block;
-  margin: 0 5vh;
-  padding: 1.5vh;
-  border-radius: 100px;
-  text-align: center;
+.navbar ul {
+  list-style-type: none;
+  background-color: darkgray;
+  padding: 0x;
+  margin: 0px;
+  overflow: hidden;
 }
 
-nav a {
- color: white;
-  padding: 1em;
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
   text-align: center;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  background-color: lightpink;
+}
+
+.navbar li {
+  float: left;
 }
