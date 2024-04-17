@@ -7,6 +7,15 @@ body {
 
 /* hero section*/
 
+.q {
+  max-width: 50%; 
+  text-align: center;
+  background-color: #f9f9f9;  
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
 .main-container {
   width: 100%;
   height: 600px;
