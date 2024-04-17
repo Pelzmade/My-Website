@@ -8,14 +8,6 @@ body {
 
 /* hero section*/
 
-.main-quotes {
-  max-width: 50%; 
-  text-align: center;
-  padding: 20px;
-  border-radius: 10px;
-}
-
-
 .main-container {
   width: 100%;
   height: 600px;
@@ -30,10 +22,11 @@ body {
   flex-wrap: wrap;
   padding: 20px;
 }
+
 .main-intro {
   align-self: flex-start;
-  text-align: left; 
-  margin-bottom: 100px;
+  text-align: left;
+  margin-top: 30px; 
 }
 
 .background-image {
@@ -251,10 +244,13 @@ footer {
 
 .navbar ul {
   list-style-type: none;
-  background-color: darkgray;
-  padding: 0x;
-  margin: 0px;
+  background-color: f2efea;
+  padding: 0;
+  margin: 0;
   overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .navbar a {
@@ -264,10 +260,11 @@ footer {
   display: block;
   text-align: center;
   font-weight: bold;
+  font-size: 1.25rem;
 }
 
 .navbar a:hover {
-  background-color: lightpink;
+  background-color: #e3d0c8;;
 }
 
 .navbar li {
