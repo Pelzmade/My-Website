@@ -7,10 +7,9 @@ body {
 
 /* hero section*/
 
-.q {
+.main-quotes {
   max-width: 50%; 
   text-align: center;
-  background-color: #f9f9f9;  
   padding: 20px;
   border-radius: 10px;
 }
@@ -25,31 +24,27 @@ body {
   background-repeat: no-repeat;
   background-position: bottom center, center;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  gap: 80px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.main-intro {
+  align-self: flex-start;
+  text-align: left; 
+  margin-bottom: 100px;
 }
 
+.background-image {
+  flex: 1 1 50%; 
+  text-align: right;}
 
 
-@media (max-width: 568px) {
-  .main-container .main-quotes p {
-    font-size: 14px;
-  }
-}
+@media screen and (max-width: 768px) {
+  .main-intro {
+    flex-basis: 50%; 
+  }}
 
-.main-container .main-intro {
-  position: relative;
-  right: 7vh;
-}
-.main-container .main-quotes {
-  position: relative;
-  left: 10vh;
-}
-
-.main-container .main-quotes .p {
-  font-size: 20px;
-}
 
 /* content section*/
 
@@ -94,7 +89,7 @@ body {
   background-color: #a0a1b3;
   text-align: center;
   color: black;
-  height: 1100px;
+  height: 1500px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
