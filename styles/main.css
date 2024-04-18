@@ -89,10 +89,10 @@ body {
   background-color: #a0a1b3;
   text-align: center;
   color: black;
-  height: 1800px;
+  height: 1700px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: center;  
   padding: 10px;
 }
 
@@ -153,7 +153,7 @@ display: none;
 }
 
 .accordian input[type="radio"]:checked + label + .content {
-  max-height: 400px;
+  max-height: 500px;
   padding: 10px 10px 20px;
 }
 
