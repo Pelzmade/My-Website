@@ -98,9 +98,15 @@
     font-size: 24px;
     }
 
+    .details img {
+      border-bottom: none !important;
+      border-radius: 0 !important;
+      width: auto !important;
+    }
+
 img {
   border-bottom: 0.25rem solid black;
-  border-radius: 5rem;
+  border-radius: 2rem;
   height: auto;
   width: 100%;
 }
