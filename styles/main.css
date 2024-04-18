@@ -77,13 +77,19 @@ body {
   }
 }
 
+/* poems container*/
+
+.poem-container {
+  background-color: #e3d0c8;;
+}
+
 /* accordian section*/
 
 .accordion-container {
   background-color: #a0a1b3;
   text-align: center;
   color: black;
-  height: 1500px;
+  height: 1800px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -260,11 +266,11 @@ footer {
   display: block;
   text-align: center;
   font-weight: bold;
-  font-size: 1.25rem;
+  font-size: 2rem;
 }
 
 .navbar a:hover {
-  background-color: #e3d0c8;;
+  background-color: #96616B;
 }
 
 .navbar li {
