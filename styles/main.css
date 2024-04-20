@@ -1,3 +1,8 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
 body {
  font-family: "EB Garamond", serif;;
   font-size: 1rem;
@@ -12,7 +17,7 @@ body {
   width: 100%;
   height: 600px;
   background-color: lightgrey;
-  background-image: url('../assets/profilepic2.png'), url(../assets/Background.jpg);
+  background-image: url('../assets/Orange.png'), url(../assets/Hero2.png);
   background-size: 50vh auto, cover;
   background-repeat: no-repeat;
   background-position: bottom center, center;
@@ -28,6 +33,10 @@ body {
   text-align: left;
   margin-top: 100px; 
 }
+.poetry-intro {
+  margin-top: 100px;
+  text-align: right; 
+}
 
 .background-image {
   flex: 1 1 50%; 
@@ -39,10 +48,24 @@ body {
     flex-basis: 50%; 
   }}
 
+/* poetry section*/
+
+.poetry-container {
+  width: 100%;
+  height: 200px;
+  background-color: lightgrey;
+  background-size: 50vh auto, cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-around;
+  align-items: left;
+  flex-wrap: wrap;
+  padding: 20px;
+}
 
 /* content section*/
 
-.content-container {
+.project-container, .content-container {
   width: 100%;
   background-color: #e3d0c8;
   display: flex;
@@ -55,7 +78,7 @@ body {
 }
 
 
-.content-section {
+.projects-section {
   width: 100%;
 }
 
@@ -77,11 +100,7 @@ body {
   }
 }
 
-/* poems container*/
 
-.poem-container {
-  background-color: #e3d0c8;;
-}
 
 /* accordian section*/
 
@@ -89,13 +108,18 @@ body {
   background-color: #a0a1b3;
   text-align: center;
   color: black;
-  height: 1600px;
+  height: 1000px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;  
   padding: 10px;
 }
 
+@media (max-width: 768px) {
+  .accordion-container {
+    height: auto; 
+  }
+}
 .accordian{
   margin: 60px auto;
   width: 800px;
@@ -166,12 +190,12 @@ display: none;
 .footer-container {
   background-color: #f2efea;
   width: 100%;
-  height: 100%;
+ height: auto;
   position: relative;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  padding: 10px;
+  bottom: 0;
 }
 
 .footer-content {
@@ -179,41 +203,10 @@ display: none;
   height: 50%;
   position: relative;
   display: flex;
+  margin: 0; 
+  padding: 10px; 
     } 
-
-    .business-card-content img {
-      width: 60%;
-      height: 50%;
-      display: flex;
-        }
-
-.links p {
-  font-weight: bold;
-  font-size: 30px;
-  text-align: center;
-  margin-top: 30px;
-}
-
-.links .privacy {
-  font-size: 24px; 
-  color: black;
-  cursor: pointer;
-  margin: 80px 60px;
-}
-
-.links .terms {
-  font-size: 24px; 
-  color: black;
-  cursor: pointer;
-  margin: 80px 60px;
-}
-
-.links .accessibility {
-  font-size: 24px; 
-  color: black;
-  cursor: pointer;
-  margin: 80px 60px;
-}
+    
 
 @media (max-width: 768px) {
   .footer-content {
@@ -221,17 +214,13 @@ display: none;
   }
 }
 
-.business-card-content h1 {
-  color: #F45B69;
-  margin-bottom: 80px;
-  text-align: left;
+.details img {
+  max-width: 100%;
+  height: auto; 
+  display: block; 
+  margin: 0; 
+  padding-bottom: 100px;
 }
-
-.business-card-content footer {
-  margin-top: 60px;
-  text-align: left;
-}
-
 
 @media screen and (max-width: 600px) {
   iframe {
@@ -260,13 +249,17 @@ footer {
 }
 
 .navbar a {
-  color: white;
+  color: black;
   text-decoration: none;
   padding: 15px;
   display: block;
   text-align: center;
   font-weight: bold;
   font-size: 1.5rem;
+}
+
+.footer-container .navbar ul li a {
+  color: black;
 }
 
 .navbar a:hover {
@@ -282,8 +275,8 @@ footer {
   text-decoration: none;
   padding: 15px;
   display: block;
-  text-align: center;
   font-weight: bold;
   font-size: 2rem;
+  padding-bottom: 50px;
 }
 
