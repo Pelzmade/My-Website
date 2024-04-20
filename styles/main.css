@@ -33,6 +33,13 @@ body {
   text-align: left;
   margin-top: 100px; 
 }
+
+.main-intro h2{
+  color: #96616B;
+  text-align: center;
+  text-shadow: black;
+}
+
 .poetry-intro {
   margin-top: 100px;
   text-align: right; 
