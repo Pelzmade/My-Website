@@ -127,13 +127,13 @@ body {
     height: auto; 
   }
 }
-.accordian{
+.accordion{
   margin: 60px auto;
   width: 800px;
   color: black;
 }
 
-.accordian li {
+.accordion li {
   list-style: none;
   width: 100%;
   margin: 20px;
@@ -143,11 +143,11 @@ body {
   transition: background-color 0.5s, border-color 0.5s;
 }
 
-.accordian li:hover {
+.accordion li:hover {
   background-color: yellow;
 }
 
-.accordian li label {
+.accordion li label {
   display: flex;
   align-items: center;
   padding: 10px;
@@ -157,7 +157,7 @@ body {
 }
 
 @media screen and (max-width: 700px) {
-  .accordian {
+  .accordion {
     width: 50%;
   }
 }
@@ -173,7 +173,7 @@ input[type="radio"]{
 display: none;
 }
 
-.accordian .content {
+.accordion .content {
   color: black;
   padding: 0 10px;
   line-height: 26px;
@@ -183,12 +183,12 @@ display: none;
   transition: max-height 0.5s, padding 0.5s;
 }
 
-.accordian input[type="radio"]:checked + label + .content {
+.accordion input[type="radio"]:checked + label + .content {
   max-height: 500px;
   padding: 10px 10px 20px;
 }
 
-.accordian input[type="radio"]:checked + label::before{
+.accordion input[type="radio"]:checked + label::before{
   content: '-';
 }
 
