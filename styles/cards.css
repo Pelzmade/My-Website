@@ -40,19 +40,27 @@
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
+      justify-content: center;
       position: relative;
       margin: 10px;
       padding: 10px;
   }
+  .card {
+    background-color: #fff;
+    border-radius: 0.25rem;
+    box-shadow: 0rem 0.125rem 1.5rem rgb(0 0 0 / 12%);
+    width: 50%; 
+    max-width: 540px;
+    max-height: 675px; 
+    overflow: hidden; 
+    margin: .5rem;
+}
 
-.card {
-  box-sizing: border-box; 
-  margin: 10px;
-  width: 100%;
-  background-color: #e3d0c8;
-  border-radius: 2rem;
-  box-shadow: 0rem 0.125rem 1.5rem rgb(0 0 0 / 12%);
-  width: 24rem;
+.card img {
+    width: 100%;
+    height: auto; 
+    object-fit: cover; 
+  
 }
 
 
@@ -98,17 +106,17 @@
     font-size: 24px;
     }
 
-    .details img {
-      border-bottom: none !important;
-      border-radius: 0 !important;
-      width: auto !important;
-    }
+.projects {
+    width: 50%;
+    height: 50%;
+    position: relative;
+    flex-basis: 60%;
+    display: flex;
+}
 
-img {
-  border-bottom: 0.25rem solid black;
-  border-radius: 2rem;
-  height: auto;
-  width: 100%;
+.project-container {
+  display: flex;
+  justify-content: flex-start; 
 }
 
 @media screen and (min-width: 768px) {
