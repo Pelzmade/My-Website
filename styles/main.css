@@ -193,10 +193,11 @@ display: none;
  height: auto;
   position: relative;
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  bottom: 0;
+  justify-content: center;
+  align-items: center;
 }
+
+
 
 .footer-content {
   width: 50%;
@@ -234,6 +235,12 @@ footer {
   width: 100%;
   padding: 20px 0;
   text-align: center; 
+  justify-content: center;
+}
+
+
+.footer-text {
+  text-align: center;
 }
 
 
