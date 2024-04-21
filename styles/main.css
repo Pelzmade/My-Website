@@ -1,5 +1,6 @@
 html, body {
   height: 100%;
+  width: 100%;
   margin: 0;
 }
 
@@ -37,7 +38,6 @@ body {
 .main-intro h2{
   color: #96616B;
   text-align: center;
-  text-shadow: black;
 }
 
 .poetry-intro {
@@ -55,6 +55,11 @@ body {
     flex-basis: 50%; 
   }}
 
+  .container {
+    margin: 3rem auto;
+    width: 100%;
+  }
+
 /* poetry section*/
 
 .poetry-container {
@@ -65,12 +70,12 @@ body {
   background-repeat: no-repeat;
   display: flex;
   justify-content: space-around;
-  align-items: left;
+  align-items: center;
   flex-wrap: wrap;
   padding: 20px;
 }
 
-/* content section*/
+/* content & project section*/
 
 .project-container, .content-container {
   width: 100%;
@@ -108,7 +113,6 @@ body {
 }
 
 
-
 /* accordian section*/
 
 .accordion-container {
@@ -118,7 +122,7 @@ body {
   height: 1000px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;  
+  justify-content: center;
   padding: 10px;
 }
 
@@ -205,7 +209,6 @@ display: none;
 }
 
 
-
 .footer-content {
   width: 50%;
   height: 50%;
@@ -253,7 +256,7 @@ footer {
 
 .navbar ul {
   list-style-type: none;
-  background-color: f2efea;
+  color: #f2efea;
   padding: 0;
   margin: 0;
   overflow: hidden;
