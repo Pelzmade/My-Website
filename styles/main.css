@@ -12,6 +12,14 @@ body {
   margin: 0px;
 }
 
+.logos {
+    background-color: transparent; }
+
+    div, p, body {
+      background-color: transparent; /* Make sure there's no background color set */
+  }
+  
+
 button {
   background-color: #96616B; 
   color: white; 
