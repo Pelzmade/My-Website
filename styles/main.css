@@ -15,9 +15,35 @@ body {
 .logos {
     background-color: transparent; }
 
-    div, p, body {
-      background-color: transparent; /* Make sure there's no background color set */
-  }
+    .logo-container {
+      display: flex;
+      align-items: center; 
+      gap: 10px; 
+      flex-wrap: wrap; 
+    }
+    
+    .logo-container {
+  display: flex;
+  align-items: center; 
+  gap: 10px; 
+  flex-wrap: wrap; 
+}
+
+.logos {
+  max-width: 300px; 
+  height: auto;
+}
+
+.CreativeBrief {
+  max-width: 400px; 
+height: auto; 
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+    
   
 
 button {
