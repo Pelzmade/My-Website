@@ -35,13 +35,17 @@ body {
 }
 
 .CreativeBrief {
-  max-width: 400px; 
-height: auto; 
+  width: 100%;
+  max-width: 400px;
+  height: auto;
   margin: 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  flex-shrink: 0;
 }
+
 
     
   
