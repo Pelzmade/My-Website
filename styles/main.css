@@ -46,6 +46,28 @@ body {
   flex-shrink: 0;
 }
 
+.spaced-element {
+  margin-bottom: 30px; 
+}
+
+.styled-link {
+  display: inline-block; 
+  padding: 10px 20px; 
+  background-color: #96616B; 
+  color: white; 
+  text-decoration: none; 
+  border-radius: 8px; 
+  border: 2px solid transparent; 
+  font-weight: bold; 
+  text-align: center; 
+  transition: background-color 0.3s, border-color 0.3s; 
+}
+
+.styled-link:hover {
+  background-color: #0056b3; 
+  border-color: #004085; 
+}
+
 
     
   
