@@ -367,3 +367,26 @@ footer {
   padding-bottom: 50px;
 }
 
+.laptop {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.linkedin-logo {
+  max-width: 20px;   
+  height: auto;       
+  margin: 0 auto;   
+  display: block;     
+}
+
+
+
+
+
