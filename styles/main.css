@@ -367,17 +367,6 @@ footer {
   padding-bottom: 50px;
 }
 
-.laptop {
-  width: 100%;
-  max-width: 500px;
-  height: auto;
-  margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0;
-}
 
 .linkedin-logo {
   max-width: 20px;   
@@ -385,6 +374,58 @@ footer {
   margin: 0 auto;   
   display: block;     
 }
+
+.laptop-container {
+  position: relative;  
+  width: 600px;       
+}
+
+.laptop {
+  width: 100%;        
+  height: auto;       
+  animation: fadeIn 2s ease-in forwards, pulse 2s ease-in-out infinite 2s;
+}
+
+/* Fade-in effect */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Pulsating effect without border */
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.screen-text {
+  position: absolute;
+  top: 50%;          
+  left: 50%;         
+  transform: translate(-50%, -50%); 
+  color: darkgray;    
+  font-size: 24px;  
+  font-weight: bold; 
+  text-align: center; 
+  pointer-events: none; 
+}
+
+
+
+
+
 
 
 
