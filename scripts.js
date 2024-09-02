@@ -22,21 +22,21 @@ document.addEventListener('DOMContentLoaded', function() {
 
 let currentIndex = 0;
 
-const carousels = document.querySelectorAll('.photo-composite-carousel');
-const prevButtons = document.querySelectorAll('.prev');
-const nextButtons = document.querySelectorAll('.next');
+const carouselContainers = document.querySelectorAll('.photo-composite-carousel-container');
+carouselContainers.forEach(container => {
+  const carousel = container.querySelector('.photo-composite-carousel');
+  const images = carousel.querySelectorAll('.carousel-image');
+  const prevButton = container.querySelector('.prev2');
+  const nextButton = container.querySelector('.next2');
 
-prevButtons.forEach((button, i) => {
-  button.addEventListener('click', () => {
-    currentIndex = (currentIndex === 0) ? carousels[i].children.length - 1 : currentIndex - 1;
-    carousels[i].style.transform = `translateX(-${currentIndex * 100}%)`;
+  prevButton.addEventListener('click', () => {
+    currentIndex = (currentIndex === 0) ? images.length - 1 : currentIndex - 1;
+    carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
   });
-});
 
-nextButtons.forEach((button, i) => {
-  button.addEventListener('click', () => {
-    currentIndex = (currentIndex === carousels[i].children.length - 1) ? 0 : currentIndex + 1;
-    carousels[i].style.transform = `translateX(-${currentIndex * 100}%)`;
+  nextButton.addEventListener('click', () => {
+    currentIndex = (currentIndex === images.length - 1) ? 0 : currentIndex + 1;
+    carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
   });
 });
 
