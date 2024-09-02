@@ -13,30 +13,72 @@ body {
 }
 
 .logos {
-    background-color: transparent; }
+    background-color: transparent; 
+      width: 100px; 
+      max-width: 600px;
+      height: auto;
+    }
 
     .logo-container {
       display: flex;
-      align-items: center; 
-      gap: 10px; 
-      flex-wrap: wrap; 
+      flex-direction: column;
+      gap: 20px; 
+      width: 100%; 
+      max-width: 100%; 
+      margin: 0; 
+      padding: 0 10px; 
     }
     
-    .logo-container {
-  display: flex;
-  align-items: center; 
-  gap: 10px; 
-  flex-wrap: wrap; 
-}
-
-.logos {
-  max-width: 300px; 
-  height: auto;
-}
+    .top-row {
+      display: flex;
+      flex-wrap: wrap; 
+      align-items: flex-start;
+      gap: 10px; 
+    }
+    
+    .moodboard-container {
+      position: relative; 
+      width: 100%; 
+      max-width: 500px; 
+      margin: 0 auto; 
+    }
+    
+    .moodboard {
+      width: 100%; 
+      height: auto;
+    }
+    
+    .logo-text {
+      position: absolute; 
+      top: 10px; 
+      left: 60%; 
+      transform: translateX(-50%); 
+      text-align: center;
+      color: rgb(91, 55, 12); 
+      font-size: 30px; 
+      font-weight: bold; 
+      z-index: 10; 
+    }
+    
+  
+    /* Responsive adjustments */
+    @media (max-width: 600px) {
+      .top-row {
+        flex-direction: column; 
+        align-items: left; 
+      }
+      
+      .logo-text {
+        font-size: 25px; 
+        top: 5px; 
+      }
+    }
+       
+    
 
 .CreativeBrief {
   width: 100%;
-  max-width: 400px;
+  max-width: 700px;
   height: auto;
   margin: 0;
   display: flex;
@@ -47,7 +89,7 @@ body {
 }
 
 .spaced-element {
-  margin-bottom: 30px; 
+  margin-bottom: 50px; 
 }
 
 .styled-link {
@@ -61,6 +103,7 @@ body {
   font-weight: bold; 
   text-align: center; 
   transition: background-color 0.3s, border-color 0.3s; 
+  margin-bottom: 100px;
 }
 
 .styled-link:hover {
@@ -68,9 +111,6 @@ body {
   border-color: #96616B; 
 }
 
-
-    
-  
 
 button {
   background-color: #96616B; 
@@ -377,7 +417,7 @@ footer {
 
 .email {
   width: auto;
-  max-width: 300px;
+  max-width: 400px;
   height: auto;
   margin: 0;
   display: flex;
