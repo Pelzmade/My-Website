@@ -1,21 +1,4 @@
 
-const button = document.getElementById('clickHereButton');
-
-
-button.addEventListener('click', () => {
-    
-    alert('Button clicked!');
-});
-
-function buttonClick() {
-    alert("Nice to meet you");
-}
-
-
-window.location.href = "https://pelzmade.github.io/My-Website/";
-
-
-
 document.addEventListener('DOMContentLoaded', function() {
   const carousel = document.querySelector('.carousel');
   const images = document.querySelectorAll('.carousel-image');
@@ -36,6 +19,23 @@ document.addEventListener('DOMContentLoaded', function() {
     updateCarousel();
   });
 });
+
+const button = document.getElementById('clickHereButton');
+
+
+button.addEventListener('click', () => {
+    
+    alert('Button clicked!');
+});
+
+function buttonClick() {
+    alert("Nice to meet you");
+}
+
+
+window.location.href = "https://pelzmade.github.io/My-Website/";
+
+
 
 
 
