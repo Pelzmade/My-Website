@@ -20,6 +20,27 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+let currentIndex = 0;
+
+const carousels = document.querySelectorAll('.photo-composite-carousel');
+const prevButtons = document.querySelectorAll('.prev');
+const nextButtons = document.querySelectorAll('.next');
+
+prevButtons.forEach((button, i) => {
+  button.addEventListener('click', () => {
+    currentIndex = (currentIndex === 0) ? carousels[i].children.length - 1 : currentIndex - 1;
+    carousels[i].style.transform = `translateX(-${currentIndex * 100}%)`;
+  });
+});
+
+nextButtons.forEach((button, i) => {
+  button.addEventListener('click', () => {
+    currentIndex = (currentIndex === carousels[i].children.length - 1) ? 0 : currentIndex + 1;
+    carousels[i].style.transform = `translateX(-${currentIndex * 100}%)`;
+  });
+});
+
+
 const button = document.getElementById('clickHereButton');
 
 
