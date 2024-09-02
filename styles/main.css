@@ -18,38 +18,55 @@ body {
   max-width: 500px; 
 }
 
+/* Existing CSS for reference */
 .logo-container {
   display: flex;
   flex-direction: column;
-  gap: 20px; 
-  width: 100%; 
-  max-width: 100%; 
-  margin: 0; 
-  padding: 0 10px; 
+  gap: 20px;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0 10px;
 }
 
 .top-row, .cow-row {
   display: flex;
-  align-items: center; 
-  gap: 20px; 
+  align-items: center;
+  gap: 20px;
 }
 
 .logo-moodboard-container {
   display: flex;
   flex-wrap: wrap;
-  align-items: center; 
-  gap: 20px; 
+  align-items: center;
+  gap: 20px;
 }
 
 .moodboard-container {
-  position: relative; 
-  width: 100%; 
-  max-width: 500px; 
+  position: relative;
+  width: 100%;
+  max-width: 500px;
 }
 
 .moodboard {
-  width: 100%; 
+  width: 100%;
   height: auto;
+}
+
+/* Add these media queries */
+@media (max-width: 768px) {
+  .logo-container {
+    padding: 0 5px; /* Reduce padding on smaller screens */
+  }
+
+  .logo-moodboard-container {
+    flex-direction: column; /* Stack moodboard below the logo */
+    align-items: center;
+  }
+
+  .moodboard-container {
+    max-width: 100%; /* Adjust max-width to fit smaller screens */
+  }
 }
 
 .logo-text {
