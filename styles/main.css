@@ -376,7 +376,7 @@ footer {
 }
 
 .email {
-  width: 100%;
+  width: auto;
   max-width: 300px;
   height: auto;
   margin: 0;
@@ -390,7 +390,7 @@ footer {
 .laptop-container {
   position: relative; 
   width: 100%; 
-  max-width: 500px; 
+  max-width: 600px; 
   margin: 0; 
 }
 
