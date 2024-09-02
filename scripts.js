@@ -16,33 +16,27 @@ window.location.href = "https://pelzmade.github.io/My-Website/";
 
 
 
-  const prevButton = document.querySelector('.prev');
-  const nextButton = document.querySelector('.next');
+document.addEventListener('DOMContentLoaded', function() {
   const carousel = document.querySelector('.carousel');
   const images = document.querySelectorAll('.carousel-image');
-  let index = 0;
+  let currentIndex = 0;
 
-  function showImage(index) {
-    const totalImages = images.length;
-    if (index >= totalImages) {
-      index = 0;
-    } else if (index < 0) {
-      index = totalImages - 1;
-    }
-    carousel.style.transform = `translateX(-${index * 100}%)`;
+  function updateCarousel() {
+    const offset = -currentIndex * 100;
+    carousel.style.transform = `translateX(${offset}%)`;
   }
 
-  prevButton.addEventListener('click', () => {
-    index--;
-    showImage(index);
+  document.querySelector('.prev').addEventListener('click', function() {
+    currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;
+    updateCarousel();
   });
 
-  nextButton.addEventListener('click', () => {
-    index++;
-    showImage(index);
+  document.querySelector('.next').addEventListener('click', function() {
+    currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;
+    updateCarousel();
   });
+});
 
-  showImage(index); // Initial display
 
 
 

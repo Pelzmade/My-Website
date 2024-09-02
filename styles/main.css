@@ -117,7 +117,7 @@ button {
   border: none;
   padding: 10px;
   cursor: pointer;
-  z-index: 10; /* Ensure buttons are above the carousel */
+  z-index: 10; 
 }
 
 .prev {
@@ -262,7 +262,7 @@ button {
 
   .fa-solid {
       font-size: 72px; 
-      color: dar;
+      color: black;
       cursor: pointer;
     }
     
@@ -479,7 +479,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: left;
-  align-items: left;
+  align-items: center;
   flex-shrink: 0;
 }
 
