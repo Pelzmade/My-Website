@@ -1,24 +1,44 @@
-
 document.addEventListener('DOMContentLoaded', function() {
-  const carousel = document.querySelector('.carousel');
-  const images = document.querySelectorAll('.carousel-image');
-  let currentIndex = 0;
+  // Select all carousel containers
+  const carouselContainers = document.querySelectorAll('.carousel-container');
 
-  function updateCarousel() {
-    const offset = -currentIndex * 100;
-    carousel.style.transform = `translateX(${offset}%)`;
-  }
+  // Loop through each container
+  carouselContainers.forEach(container => {
+    const carousel = container.querySelector('.carousel');
+    const images = carousel.querySelectorAll('.carousel-image');
+    const prevButton = container.querySelector('.prev');
+    const nextButton = container.querySelector('.next');
+    let currentIndex = 0;
 
-  document.querySelector('.prev').addEventListener('click', function() {
-    currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;
+    // Function to update the carousel position
+    function updateCarousel() {
+      if (images.length === 0) return; // Prevent errors if no images are present
+      
+      const imageWidth = images[0].clientWidth; // Use the width of the first image
+      const offset = -currentIndex * imageWidth; // Adjust offset based on image width
+      carousel.style.transform = `translateX(${offset}px)`; // Use px instead of %
+    }
+
+    // Initialize carousel position
     updateCarousel();
-  });
 
-  document.querySelector('.next').addEventListener('click', function() {
-    currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;
-    updateCarousel();
+    // Add event listeners for the previous and next buttons
+    prevButton.addEventListener('click', () => {
+      currentIndex = (currentIndex === 0) ? images.length - 1 : currentIndex - 1;
+      updateCarousel();
+    });
+
+    nextButton.addEventListener('click', () => {
+      currentIndex = (currentIndex === images.length - 1) ? 0 : currentIndex + 1;
+      updateCarousel();
+    });
+
+    // Optional: Handle window resize
+    window.addEventListener('resize', updateCarousel);
   });
 });
+
+
 
 let currentIndex = 0;
 
