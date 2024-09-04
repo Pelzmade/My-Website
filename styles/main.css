@@ -18,7 +18,7 @@ body {
   max-width: 500px; 
 }
 
-/* Existing CSS for reference */
+
 .logo-container {
   display: flex;
   flex-direction: column;
@@ -55,7 +55,7 @@ body {
   height: auto;
 }
 
-/* Add these media queries */
+
 @media (max-width: 768px) {
   .logo-container {
     padding: 0 5px; 
@@ -71,7 +71,7 @@ body {
   }
 }
 
-/* Responsive adjustments */
+
 @media (max-width: 1200px) {
   .top-row, .cow-row {
     flex-direction: column; 
@@ -81,8 +81,8 @@ body {
 
 .logo-text {
   position: absolute; 
-  top: 10px; 
-  left: 20px; 
+bottom: -15px; 
+  left: 150px; 
   color: rgb(91, 55, 12); 
   font-size: 30px; 
   font-weight: bold; 
@@ -98,10 +98,13 @@ body {
   overflow: hidden;
 }
 
+
 .carousel {
   display: flex;
   transition: transform 0.5s ease-in-out;
+  width: auto; /* Adjust if necessary */
 }
+
 
 .carousel-image {
   width: 100%;
