@@ -576,3 +576,39 @@ footer {
 
 
 
+.vending-machine-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333; /* Dark gray background */
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border-radius: 8px; /* Slightly rounded edges */
+  font-weight: bold;
+  text-decoration: none;
+  border: none; /* Remove border for a cleaner look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+.vending-machine-button::before {
+  content: '🔄'; /* Refresh icon */
+  margin-right: 10px; /* Space between icon and text */
+  font-size: 18px;
+  color: #ffcc00; /* Bright yellow */
+}
+
+.vending-machine-button:hover {
+  background-color: #6DBE4B; /* Lighter green on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Slightly stronger shadow */
+  transform: scale(1.05); /* Slight scale for interactivity */
+}
+
+.vending-machine-button:active {
+  background-color: #FCE12B; /* Yellow on click */
+  transform: scale(0.98); /* Shrink when clicked */
+}
+
+
+
