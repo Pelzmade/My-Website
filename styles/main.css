@@ -12,6 +12,14 @@ body {
   margin: 0px;
 }
 
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; /* Optional: Adjust width as needed */
+}
+
+
 .logos {
   background-color: transparent; 
   width: 100px; 
