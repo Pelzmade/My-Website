@@ -2,6 +2,7 @@ html, body {
   height: 100%;
   width: 100%;
   margin: 0;
+  position: fixed;
 }
 
 body {
@@ -10,13 +11,6 @@ body {
   font-weight: 500;
   line-height: 1.1;
   margin: 0px;
-}
-
-.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%; /* Optional: Adjust width as needed */
 }
 
 
